@@ -1,0 +1,28 @@
+ul {
+    border: double 4px #21b384;
+    padding: 0.5em 1em 0.5em 2.3em;
+    position: relative;
+    list-style: none;
+}
+ul li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    border-bottom: #21b384;
+}
+ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a4";
+    position: absolute;
+    left: 1em; /*左端からのアイコンまで*/
+    color: #21b384; /*アイコン色*/
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+a:hover {
+    color: skyblue;
+    font-size: 1.5em; /*文字サイズ2倍*/
+    font-weight: bold;
+}
