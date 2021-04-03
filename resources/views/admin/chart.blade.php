@@ -12,17 +12,11 @@
           <div>
             <div class="">
               <label>出席済</label>
-              <td></td>
-            </div>
-            <div class="">
-            </div>
-          </div>
-          <div>
-            <div class="">
-              <label>未出席</label>
-              <td></td>
-            </div>
-            <div class="">
+              <tr>
+                <th>時限</th>
+                <th>名前</th>
+                <th>出席済か</th>
+              </tr>
             </div>
           </div>
       </div>
