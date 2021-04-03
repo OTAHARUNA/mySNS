@@ -5,6 +5,7 @@
   <div class="">
     <div class="">
       <p>日付選択してください</p>
+      <div id="callender"></div>
     </div>
     <div class="">
       <div class="">

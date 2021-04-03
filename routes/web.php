@@ -42,3 +42,7 @@ Route::resource('posts', 'PostsController', ['only' => ['index','store', 'edit',
     Route::get('/added', 'Auth\RegisterController@added');
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
