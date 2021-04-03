@@ -11,14 +11,16 @@
       <div class="">
           <div>
             <div class="">
-              <p>出席済</p>
+              <label>出席済</label>
+              <td></td>
             </div>
             <div class="">
             </div>
           </div>
           <div>
             <div class="">
-              <p>出席済</p>
+              <label>未出席</label>
+              <td></td>
             </div>
             <div class="">
             </div>
