@@ -17,7 +17,7 @@
           </div>
           <div>
             <div class="">
-              <p>出席済</p>
+              <p>未出席</p>
             </div>
             <div class="">
             </div>
