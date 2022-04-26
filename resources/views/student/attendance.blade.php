@@ -23,10 +23,10 @@
                             <lavel for="sel">時限</lavel>
                             <div class="">
                                 <select class="form-control" id="sel" name="sel[]" size="1">
-                                   <option value="1" selected>1限</option>
-                                   <option value="2">2限</option>
-                                   <option value="3">3限</option>
-                                   <option value="4">4限</option>
+                                    <option value="1" selected>1限</option>
+                                    <option value="2">2限</option>
+                                    <option value="3">3限</option>
+                                    <option value="4">4限</option>
                                 </select>
                             </div>
                         </div>

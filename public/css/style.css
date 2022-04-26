@@ -1,10 +1,10 @@
-ul {
+.sub_menu {
     border: double 4px #21b384;
     padding: 0.5em 1em 0.5em 2.3em;
     position: relative;
     list-style: none;
 }
-ul li {
+.sub_menu ul li {
     line-height: 1.5;
     padding: 0.5em 0;
     border-bottom: #21b384;
@@ -18,8 +18,8 @@ ul li:before {
 }
 
 a {
-    text-decoration: none;
-    color: pink;
+    text-decoration: none !important;
+    color: pink !important;
 }
 a:hover {
     color: skyblue;
