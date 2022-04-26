@@ -13,20 +13,22 @@ class StudentController extends Controller
     //
     public function index()
     {
+        $string = 'aaa';
+        $array = ['aaa'];
+
         //$time = Carbon::now(); 時間含む日付表示
         $day = date('n/j');
-        return view('student.attendance',compact('day'));
+        return view('student.attendance', compact('day'));
     }
-   public function show()
-   {
-       $calendar = new CalendarView(time());
-       return view('student.reservation', [
-           "calendar" => $calendar
-           ]);
+    public function show()
+    {
+        $calendar = new CalendarView(time());
+        return view('student.reservation', [
+            "calendar" => $calendar
+        ]);
     }
     public function mylist()
     {
         return view('/student.mylist');
     }
-
 }
