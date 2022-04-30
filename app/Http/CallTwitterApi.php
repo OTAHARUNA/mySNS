@@ -20,7 +20,7 @@ class callTwitterApi
         );
     }
 
-    // ツイート検索
+    // 投稿検索
     public function serachTweets(String $searchWord)
     {
         $d = $this->t->get("search/tweets", [
@@ -29,5 +29,15 @@ class callTwitterApi
         ]);
 
         return $d->statuses;
+    }
+
+    //oEmbed互換形式で取得
+    public function statusesOembed(String $id)
+    {
+        $d = $this->t->get("statuses/oembed", [
+            'id' => $id,
+        ]);
+
+        return $d->html;
     }
 }

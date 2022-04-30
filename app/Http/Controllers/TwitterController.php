@@ -11,7 +11,12 @@ class TwitterController extends Controller
     public function index(Request $request)
     {
         $t = new CallTwitterApi();
-        $d = $t->serachTweets("検索ワード");
-        return view('twitterapi', ['twitter' => $d]);
+        $d = $t->serachTweets("雨");
+
+        $array = array();
+        foreach ($d as $d) {
+            $array[] = array($t->statusesOembed($d->id));
+        }
+        return view('twitterapi', ['twitter' => $array]);
     }
 }
