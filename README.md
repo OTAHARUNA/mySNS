@@ -6,4 +6,16 @@
 ## 一部ツイッターAPI機能を搭載している。
 ■自動リロード機能
 1. HTMLタグに盛り込む。
+```html
+<meta http-equiv="refresh" content="30; URL=/twitter">
+```
+
 2. JSで実装
+```javascript
+<script>
+   const timer = 5000 // ミリ秒で間隔の時間を指定
+   window.addEventListener('load', function() {
+      setInterval('location.reload()', timer);
+   });
+</script>
+```
