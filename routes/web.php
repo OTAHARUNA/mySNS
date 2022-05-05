@@ -20,6 +20,7 @@ Route::group(['middleware' => 'guest'], function () {
     Route::get('/login', 'Auth\LoginController@login')->name('login');
     Route::post('/login', 'Auth\LoginController@login');
     Route::get('/twitter', 'TwitterController@index');
+    Route::post('/twitter', 'TwitterController@index');
 });
 
 

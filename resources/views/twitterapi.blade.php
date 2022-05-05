@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <form action="/twitter">
+    <form action="/twitter" method="POST">
         @csrf
         <div class="text-center">
             <table class="mx-auto">
