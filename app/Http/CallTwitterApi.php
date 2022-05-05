@@ -20,8 +20,8 @@ class callTwitterApi
         );
     }
 
-    // 投稿検索
-    public function serachTweets(String $searchWord)
+    // 投稿検索URL実行
+    public function searchTweets(String $searchWord)
     {
         $d = $this->t->get("search/tweets", [
             'q' => $searchWord,
@@ -31,7 +31,7 @@ class callTwitterApi
         return $d->statuses;
     }
 
-    //oEmbed互換形式で取得
+    //oEmbed互換形式で取得 UI調整
     public function statusesOembed(String $id)
     {
         $d = $this->t->get("statuses/oembed", [
