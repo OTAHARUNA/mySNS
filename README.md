@@ -6,11 +6,13 @@
 ## 一部ツイッターAPI機能を搭載している。
 ■自動リロード機能
 1. HTMLタグに盛り込む。
+コミット：7ddb8d0d55c53a483356716d440a3fb877df3087
 ```html
 <meta http-equiv="refresh" content="30; URL=/twitter">
 ```
 
-2. JSで実装
+1. JSで実装
+コミット：cb28ebf93d04252e8c96229bd58e4b7f91b5fe5c
 ```javascript
 <script>
    const timer = 5000 // ミリ秒で間隔の時間を指定
