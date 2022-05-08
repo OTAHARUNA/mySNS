@@ -23,6 +23,6 @@ class TwitterController extends Controller
             //UI調整 statusesOembed
             $array[] = array($t->statusesOembed($d->id));
         }
-        return view('twitterapi', ['twitter' => $array]);
+        return view('twitterapi', compact('search_word'))->with(['twitter' => $array]);
     }
 }
